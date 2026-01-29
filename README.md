@@ -77,7 +77,7 @@ for dir in */; do
   if [ -f "$dir/package.json" ]; then
     echo "Installation de $dir..."
     cd "$dir"
-    npm install
+    npm install || echo "Erreur lors de l'installation de $dir"
     cd ..
   fi
 done
@@ -342,11 +342,11 @@ Pour des applications en production, toujours :
 
 Les contributions sont les bienvenues ! Pour contribuer :
 
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commiter vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Pusher vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+1. Forkez le projet
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
+3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. Pushez vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
 
 ## 📝 Licence
 
