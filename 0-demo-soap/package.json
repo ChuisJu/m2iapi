@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "strong-soap": "^5.0.6"
+  }
+}

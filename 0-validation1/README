@@ -1,0 +1,13 @@
+npm install
+
+node app.js
+
+
+POSTMAN :
+POST : localhost:3000/users
+
+BODY :
+{
+  "email": "test@example.com",
+  "password": "Azerty123!"
+}
